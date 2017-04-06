@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="margin1">20dp</dimen>
+    <dimen name="margin_or_padding">10dp</dimen>
+    <dimen name="button2_text_size">16sp</dimen>
+    <dimen name="nested_layout_padding_top">24dp</dimen>
+</resources>

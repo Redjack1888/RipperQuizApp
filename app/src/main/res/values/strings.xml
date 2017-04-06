@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name" translatable="false">Ripper Quiz App</string>
+    <string name="Question1">Which of these is NOT a Jack the Ripper suspect?
+</string>
+    <string name="Question2">Barbara Windsor once played the part of Annie Chapman?
+</string>
+    <string name="Question3">The letter to George Lusk bore the chilling signature Jack the Ripper?
+</string>
+    <string name="Question4">Eliza Cooper had loaned Annie Chapman?
+</string>
+    <string name="Question5">John Davies found the body of…
+</string>
+    <string name="Question6">How  many Whitechapel Murders victims were there?
+</string>
+    <string name="Question7">The last known words of Mary Nichols were \"Goodnight old cock\"?
+</string>
+    <string name="Question8">Rose Mylett was a Whitechapel Murders victim?
+</string>
+    <string name="Question9">\"SURELY SLIME CANT HURT ROBERT\" is an anagram of which two murder sites?
+</string>
+    <string name="Question10">What did Elizabeth Stride borrow from Charles Preston?
+</string>
+    <string name="AnswerTrue">True</string>
+    <string name="AnswerFalse">False</string>
+    <string name="your_name_here">Please enter your name here</string>
+    <string name="name">Name</string>
+    <string name="answer1Q1" translatable="false">Dr. William E. Thomas</string>
+    <string name="answer2Q1" translatable="false">Dr. John W. Sanders</string>
+    <string name="answer3Q1" translatable="false">Dr. Thomas Bond</string>
+    <string name="answer4Q1" translatable="false">Dr. John Hewitt</string>
+    <string name="answer1Q4">A bar of soap</string>
+    <string name="answer2Q4" translatable="false">Sixpence</string>
+    <string name="answer3Q4">A hair brush</string>
+    <string name="answer4Q4">A bottle of gin</string>
+    <string name="answer1Q5" translatable="false">Mary Nichols</string>
+    <string name="answer2Q5" translatable="false">Annie Chapman</string>
+    <string name="answer3Q5" translatable="false">Catherine Eddowes</string>
+    <string name="answer4Q5" translatable="false">Mary Kelly</string>
+    <string name="answer1Q6" translatable="false">4</string>
+    <string name="answer2Q6" translatable="false">5</string>
+    <string name="answer3Q6" translatable="false">8</string>
+    <string name="answer4Q6" translatable="false">11+</string>
+    <string name="answer1Q9">Buck\'s Row and Miller\'s Court</string>
+    <string name="answer2Q9">Miller\'s Court and Hanbury Street</string>
+    <string name="answer3Q9">Hanbury Street and Berner Street</string>
+    <string name="answer4Q9">Durward Street and Millers Court</string>
+    <string name="answer1Q10" translatable="false">Sixpence</string>
+    <string name="answer2Q10">A loaf of bread</string>
+    <string name="answer3Q10">A coat</string>
+    <string name="answer4Q10">A clothes brush</string>
+    <string name="reset" translatable="false">RESET</string>
+    <string name="submit_quiz">SUBMIT</string>
+    <string name="header_image_description" translatable="false">Jack the Ripper Qiz Header</string>
+    <string name="Toast1a">Sorry&#160;</string>
+    <string name="Toast2a" translatable="false">!</string>
+    <string name="Toast3a">\nYou have to study more!</string>
+    <string name="Toast4a">\n\nYour score is&#160;</string>
+    <string name="Toast5a" translatable="false">/100.</string>
+    <string name="Toast6a">\nYou answered correctly to&#160;</string>
+    <string name="Toast7a">&#160;questions out of 10 total!</string>
+
+</resources>
