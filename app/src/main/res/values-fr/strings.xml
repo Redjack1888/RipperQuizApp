@@ -30,4 +30,8 @@
     <string name="Toast3a">\nVous devez étudier davantage!</string>
     <string name="Toast4a">\n\nTon score est&#160;</string>
     <string name="Toast6a">\nVous avez répondu correctement à&#160;</string>
+    <string name="Toast10a">Fantastique&#160;</string>
+    <string name="Toast11a">, Vous êtes un véritable Ripperologue!</string>
+    <string name="Toast8a">Bon travail&#160;</string>
+    <string name="Toast9a">, Mais vous pouvez faire mieux!</string>
 </resources>

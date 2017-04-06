@@ -149,10 +149,10 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
         if (score <= 45) {
-            Toast toast = Toast.makeText(this, "Good job " + name + ", but you can do better!" + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a), Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, getString(R.string.Toast8a) + name + getString(R.string.Toast9a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a), Toast.LENGTH_LONG);
             toast.show();
         } else {
-            Toast toast = Toast.makeText(this, "Fantastic " + name + ", you are a real Ripperologist!" + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a), Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(this, getString(R.string.Toast10a) + name + getString(R.string.Toast11a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a), Toast.LENGTH_LONG);
             toast.show();
         }
         Button submit = (Button) findViewById(R.id.submit_button);

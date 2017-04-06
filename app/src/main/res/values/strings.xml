@@ -58,5 +58,9 @@
     <string name="Toast5a" translatable="false">/100.</string>
     <string name="Toast6a">\nYou answered correctly to&#160;</string>
     <string name="Toast7a">&#160;questions out of 10 total!</string>
+    <string name="Toast8a">Good job&#160;</string>
+    <string name="Toast9a">, but you can do better!</string>
+    <string name="Toast10a">Fantastic&#160;</string>
+    <string name="Toast11a">, you are a real Ripperologist!</string>
 
 </resources>
