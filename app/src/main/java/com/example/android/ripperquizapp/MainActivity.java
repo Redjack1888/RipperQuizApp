@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(this, getString(R.string.Toast1a) + name + getString(R.string.Toast2a) + getString(R.string.Toast3a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a), Toast.LENGTH_LONG);
             toast.show();
         }
-        if (score <= 45) {
+        if (score > 21 && score <= 80) {
             Toast toast = Toast.makeText(this, getString(R.string.Toast8a) + name + getString(R.string.Toast9a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a), Toast.LENGTH_LONG);
             toast.show();
         } else {
