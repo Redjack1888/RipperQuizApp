@@ -2,7 +2,6 @@ package com.example.android.ripperquizapp;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.CheckResult;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -28,43 +27,14 @@ import static com.example.android.ripperquizapp.R.id.reset_button;
 public class MainActivity extends AppCompatActivity {
 
     private RadioGroup rg1;
-//    private RadioButton a1a;
-//    private RadioButton a1b;
-//    private RadioButton a1c;
-//    private RadioButton a1d;
     private RadioGroup rg2;
-//    private RadioButton a2a;
-//    private RadioButton a2b;
     private RadioGroup rg3;
-//    private RadioButton a3a;
-//    private RadioButton a3b;
     private RadioGroup rg4;
-//    private RadioButton a4a;
-//    private RadioButton a4b;
-//    private RadioButton a4c;
-//    private RadioButton a4d;
     private RadioGroup rg5;
-//    private RadioButton a5a;
-//    private RadioButton a5b;
-//    private RadioButton a5c;
-//    private RadioButton a5d;
-
     private RadioGroup rg7;
-//    private RadioButton a7a;
-//    private RadioButton a7b;
     private RadioGroup rg8;
-//    private RadioButton a8a;
-//    private RadioButton a8b;
     private RadioGroup rg9;
-//    private RadioButton a9a;
-//    private RadioButton a9b;
-//    private RadioButton a9c;
-//    private RadioButton a9d;
     private RadioGroup rg10;
-//    private RadioButton a10a;
-//    private RadioButton a10b;
-//    private RadioButton a10c;
-//    private RadioButton a10d;
 
     private CheckBox chk6a;
     private CheckBox chk6b;
@@ -73,9 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button resetButton;
     private Button submit;
-//    private int submitVisibility;
-//    private int resetVisibility;
-//    private String submitSavedVisibility;
 
     boolean allFilled;
 
@@ -85,46 +52,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         rg1 = (RadioGroup) findViewById(R.id.rg1View); //Multiple
-//        a1a = (RadioButton) findViewById(R.id.answer1a);
-//        a1b = (RadioButton) findViewById(R.id.answer1b);
-//        a1c = (RadioButton) findViewById(R.id.answer1c);
-//        a1d = (RadioButton) findViewById(R.id.answer1d);
         rg2 = (RadioGroup) findViewById(R.id.rg3View); //True False
-//        a2a = (RadioButton) findViewById(R.id.answer2a);
-//        a2b = (RadioButton) findViewById(R.id.answer2b);
         rg3 = (RadioGroup) findViewById(R.id.rg4View); //True False
-//        a3a = (RadioButton) findViewById(R.id.answer3a);
-//        a3b = (RadioButton) findViewById(R.id.answer3b);
         rg4 = (RadioGroup) findViewById(R.id.rg5View); //Multiple
-//        a4a = (RadioButton) findViewById(R.id.answer4a);
-//        a4b = (RadioButton) findViewById(R.id.answer4b);
-//        a4c = (RadioButton) findViewById(R.id.answer4c);
-//        a4d = (RadioButton) findViewById(R.id.answer4d);
         rg5 = (RadioGroup) findViewById(R.id.rg7View); //Multiple
-//        a5a = (RadioButton) findViewById(R.id.answer5a);
-//        a5b = (RadioButton) findViewById(R.id.answer5b);
-//        a5c = (RadioButton) findViewById(R.id.answer5c);
-//        a5d = (RadioButton) findViewById(R.id.answer5d);
         chk6a = (CheckBox) findViewById(R.id.check6a); //Multiple checkboxes
         chk6b = (CheckBox) findViewById(R.id.check6b); //Multiple checkboxes
         chk6c = (CheckBox) findViewById(R.id.check6c); //Multiple checkboxes
         chk6d = (CheckBox) findViewById(R.id.check6d); //Multiple checkboxes
         rg7 = (RadioGroup) findViewById(R.id.rg11View); //True False
-//        a7a = (RadioButton) findViewById(R.id.answer7a);
-//        a7b = (RadioButton) findViewById(R.id.answer7b);
         rg8 = (RadioGroup) findViewById(R.id.rg12View); //True False
-//        a8a = (RadioButton) findViewById(R.id.answer8a);
-//        a8b = (RadioButton) findViewById(R.id.answer8b);
         rg9 = (RadioGroup) findViewById(R.id.rg13View); //Multiple
-//        a9a = (RadioButton) findViewById(R.id.answer9a);
-//        a9b = (RadioButton) findViewById(R.id.answer9b);
-//        a9c = (RadioButton) findViewById(R.id.answer9c);
-//        a9d = (RadioButton) findViewById(R.id.answer9d);
         rg10 = (RadioGroup) findViewById(R.id.rg15View); //Multiple
-//        a10a = (RadioButton) findViewById(R.id.answer10a);
-//        a10b = (RadioButton) findViewById(R.id.answer10b);
-//        a10c = (RadioButton) findViewById(R.id.answer10c);
-//        a10d = (RadioButton) findViewById(R.id.answer10d);
 
         resetButton = (Button) findViewById(reset_button);
         resetButton.setVisibility(View.INVISIBLE); //To set invisible
@@ -157,12 +96,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-//        submitVisibility = savedInstanceState.getInt("submitSavedVisibility");
-//        resetVisibility = savedInstanceState.getInt("resetSavedVisibility");
-//
-
-        submit.setVisibility(savedInstanceState.getInt("submitSavedVisibility"));
-        resetButton.setVisibility(savedInstanceState.getInt("resetSavedVisibility"));
+        if (savedInstanceState.getInt("submitSavedVisibility") == View.VISIBLE){
+            submit.setVisibility(View.VISIBLE);
+        }else {
+            submit.setVisibility(View.INVISIBLE);
+        }
+        if (savedInstanceState.getInt("resetSavedVisibility") == View.VISIBLE){
+            resetButton.setVisibility(View.VISIBLE);
+        }else {
+            resetButton.setVisibility(View.INVISIBLE);
+        }
         super.onRestoreInstanceState(savedInstanceState);
     }
 
