@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         resetButton = (Button) findViewById(reset_button);
         resetButton.setVisibility(View.INVISIBLE); //To set invisible
         submitButton = (Button) findViewById(R.id.submit_button);
-        submitButton.setVisibility(View.VISIBLE);
+        submitButton.setVisibility(View.VISIBLE); //To set visible
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.MyToolbar);
         setSupportActionBar(toolbar);
@@ -134,15 +134,15 @@ public class MainActivity extends AppCompatActivity {
     public void submit(View view) {
         allQuestionsFilled = true;
 
-        allFilled(radioGroupQuestion1);
-        allFilled(radioGroupQuestion2);
-        allFilled(radioGroupQuestion3);
-        allFilled(radioGroupQuestion4);
-        allFilled(radioGroupQuestion5);
-        allFilled(radioGroupQuestion7);
-        allFilled(radioGroupQuestion8);
-        allFilled(radioGroupQuestion9);
-        allFilled(radioGroupQuestion10);
+        radioGroupFilled(radioGroupQuestion1);
+        radioGroupFilled(radioGroupQuestion2);
+        radioGroupFilled(radioGroupQuestion3);
+        radioGroupFilled(radioGroupQuestion4);
+        radioGroupFilled(radioGroupQuestion5);
+        radioGroupFilled(radioGroupQuestion7);
+        radioGroupFilled(radioGroupQuestion8);
+        radioGroupFilled(radioGroupQuestion9);
+        radioGroupFilled(radioGroupQuestion10);
         editTextFilled();
         checkBoxesFilled();
 
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void allFilled(RadioGroup radioGroup) {
+    private void radioGroupFilled(RadioGroup radioGroup) {
         if (radioGroup.getCheckedRadioButtonId() == -1) {
             allQuestionsFilled = false;
         }
