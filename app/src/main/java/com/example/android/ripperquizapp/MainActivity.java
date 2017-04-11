@@ -26,49 +26,46 @@ import static com.example.android.ripperquizapp.R.id.reset_button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RadioGroup rg1;
-    private RadioGroup rg2;
-    private RadioGroup rg3;
-    private RadioGroup rg4;
-    private RadioGroup rg5;
-    private RadioGroup rg7;
-    private RadioGroup rg8;
-    private RadioGroup rg9;
-    private RadioGroup rg10;
-
-    private CheckBox chk6a;
-    private CheckBox chk6b;
-    private CheckBox chk6c;
-    private CheckBox chk6d;
-
+    boolean allQuestionsFilled;
+    private RadioGroup radioGroupQuestion1;
+    private RadioGroup radioGroupQuestion2;
+    private RadioGroup radioGroupQuestion3;
+    private RadioGroup radioGroupQuestion4;
+    private RadioGroup radioGroupQuestion5;
+    private RadioGroup radioGroupQuestion7;
+    private RadioGroup radioGroupQuestion8;
+    private RadioGroup radioGroupQuestion9;
+    private RadioGroup radioGroupQuestion10;
+    private CheckBox answerCheckbox6a;
+    private CheckBox answerCheckbox6b;
+    private CheckBox answerCheckbox6c;
+    private CheckBox answerCheckbox6d;
     private Button resetButton;
-    private Button submit;
-
-    boolean allFilled;
+    private Button submitButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rg1 = (RadioGroup) findViewById(R.id.rg1View); //Multiple
-        rg2 = (RadioGroup) findViewById(R.id.rg3View); //True False
-        rg3 = (RadioGroup) findViewById(R.id.rg4View); //True False
-        rg4 = (RadioGroup) findViewById(R.id.rg5View); //Multiple
-        rg5 = (RadioGroup) findViewById(R.id.rg7View); //Multiple
-        chk6a = (CheckBox) findViewById(R.id.check6a); //Multiple checkboxes
-        chk6b = (CheckBox) findViewById(R.id.check6b); //Multiple checkboxes
-        chk6c = (CheckBox) findViewById(R.id.check6c); //Multiple checkboxes
-        chk6d = (CheckBox) findViewById(R.id.check6d); //Multiple checkboxes
-        rg7 = (RadioGroup) findViewById(R.id.rg11View); //True False
-        rg8 = (RadioGroup) findViewById(R.id.rg12View); //True False
-        rg9 = (RadioGroup) findViewById(R.id.rg13View); //Multiple
-        rg10 = (RadioGroup) findViewById(R.id.rg15View); //Multiple
+        radioGroupQuestion1 = (RadioGroup) findViewById(R.id.rg1View); //Multiple
+        radioGroupQuestion2 = (RadioGroup) findViewById(R.id.rg3View); //True False
+        radioGroupQuestion3 = (RadioGroup) findViewById(R.id.rg4View); //True False
+        radioGroupQuestion4 = (RadioGroup) findViewById(R.id.rg5View); //Multiple
+        radioGroupQuestion5 = (RadioGroup) findViewById(R.id.rg7View); //Multiple
+        answerCheckbox6a = (CheckBox) findViewById(R.id.check6a); //Multiple checkboxes
+        answerCheckbox6b = (CheckBox) findViewById(R.id.check6b); //Multiple checkboxes
+        answerCheckbox6c = (CheckBox) findViewById(R.id.check6c); //Multiple checkboxes
+        answerCheckbox6d = (CheckBox) findViewById(R.id.check6d); //Multiple checkboxes
+        radioGroupQuestion7 = (RadioGroup) findViewById(R.id.rg11View); //True False
+        radioGroupQuestion8 = (RadioGroup) findViewById(R.id.rg12View); //True False
+        radioGroupQuestion9 = (RadioGroup) findViewById(R.id.rg13View); //Multiple
+        radioGroupQuestion10 = (RadioGroup) findViewById(R.id.rg15View); //Multiple
 
         resetButton = (Button) findViewById(reset_button);
         resetButton.setVisibility(View.INVISIBLE); //To set invisible
-        submit = (Button) findViewById(R.id.submit_button);
-        submit.setVisibility(View.VISIBLE);
+        submitButton = (Button) findViewById(R.id.submit_button);
+        submitButton.setVisibility(View.VISIBLE);
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.MyToolbar);
         setSupportActionBar(toolbar);
@@ -88,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        outState.putInt("submitSavedVisibility", submit.getVisibility());
+        outState.putInt("submitSavedVisibility", submitButton.getVisibility());
         outState.putInt("resetSavedVisibility", resetButton.getVisibility());
 
         super.onSaveInstanceState(outState);
@@ -96,14 +93,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        if (savedInstanceState.getInt("submitSavedVisibility") == View.VISIBLE){
-            submit.setVisibility(View.VISIBLE);
-        }else {
-            submit.setVisibility(View.INVISIBLE);
+        if (savedInstanceState.getInt("submitSavedVisibility") == View.VISIBLE) {
+            submitButton.setVisibility(View.VISIBLE);
+        } else {
+            submitButton.setVisibility(View.INVISIBLE);
         }
-        if (savedInstanceState.getInt("resetSavedVisibility") == View.VISIBLE){
+        if (savedInstanceState.getInt("resetSavedVisibility") == View.VISIBLE) {
             resetButton.setVisibility(View.VISIBLE);
-        }else {
+        } else {
             resetButton.setVisibility(View.INVISIBLE);
         }
         super.onRestoreInstanceState(savedInstanceState);
@@ -111,49 +108,49 @@ public class MainActivity extends AppCompatActivity {
 
     public void reset(View v) {
 
-        EditText nameV = (EditText) findViewById(R.id.your_name_view);
+        EditText userName = (EditText) findViewById(R.id.your_name_view);
 
-        nameV.setText(null);
+        userName.setText(null);
 
-        rg1.clearCheck();
-        rg2.clearCheck();
-        rg3.clearCheck();
-        rg4.clearCheck();
-        rg5.clearCheck();
-        rg7.clearCheck();
-        rg8.clearCheck();
-        rg9.clearCheck();
-        rg10.clearCheck();
+        radioGroupQuestion1.clearCheck();
+        radioGroupQuestion2.clearCheck();
+        radioGroupQuestion3.clearCheck();
+        radioGroupQuestion4.clearCheck();
+        radioGroupQuestion5.clearCheck();
+        radioGroupQuestion7.clearCheck();
+        radioGroupQuestion8.clearCheck();
+        radioGroupQuestion9.clearCheck();
+        radioGroupQuestion10.clearCheck();
 
-        chk6a.setChecked(false);
-        chk6b.setChecked(false);
-        chk6c.setChecked(false);
-        chk6d.setChecked(false);
+        answerCheckbox6a.setChecked(false);
+        answerCheckbox6b.setChecked(false);
+        answerCheckbox6c.setChecked(false);
+        answerCheckbox6d.setChecked(false);
 
-        submit.setVisibility(View.VISIBLE);
+        submitButton.setVisibility(View.VISIBLE);
         resetButton.setVisibility(View.INVISIBLE);
     }
 
     public void submit(View view) {
-        allFilled = true;
+        allQuestionsFilled = true;
 
-        allFilled(rg1);
-        allFilled(rg2);
-        allFilled(rg3);
-        allFilled(rg4);
-        allFilled(rg5);
-        allFilled(rg7);
-        allFilled(rg8);
-        allFilled(rg9);
-        allFilled(rg10);
+        allFilled(radioGroupQuestion1);
+        allFilled(radioGroupQuestion2);
+        allFilled(radioGroupQuestion3);
+        allFilled(radioGroupQuestion4);
+        allFilled(radioGroupQuestion5);
+        allFilled(radioGroupQuestion7);
+        allFilled(radioGroupQuestion8);
+        allFilled(radioGroupQuestion9);
+        allFilled(radioGroupQuestion10);
         editTextFilled();
         checkBoxesFilled();
 
-        if (allFilled){
+        if (allQuestionsFilled) {
             resetButton.setVisibility(View.VISIBLE); //To set visible
-            submit.setVisibility(View.INVISIBLE);
+            submitButton.setVisibility(View.INVISIBLE);
             evaluate();
-        }else {
+        } else {
             String alert_message = getString(R.string.alert_message);
             displayToast(alert_message);
         }
@@ -161,61 +158,62 @@ public class MainActivity extends AppCompatActivity {
 
     private void evaluate() {
         EditText nameView = (EditText) findViewById(R.id.your_name_view);
-        String name = nameView.getText().toString();
+        String userName = nameView.getText().toString();
         int score = 0;
 
-        if (rg1.getCheckedRadioButtonId() == answer1c) {
+        if (radioGroupQuestion1.getCheckedRadioButtonId() == answer1c) {
             score = score + 10;
         }
-        if (rg2.getCheckedRadioButtonId() == answer2a) {
+        if (radioGroupQuestion2.getCheckedRadioButtonId() == answer2a) {
             score = score + 10;
         }
-        if (rg3.getCheckedRadioButtonId() == answer3b) {
+        if (radioGroupQuestion3.getCheckedRadioButtonId() == answer3b) {
             score = score + 10;
         }
-        if (rg4.getCheckedRadioButtonId() == answer4a) {
+        if (radioGroupQuestion4.getCheckedRadioButtonId() == answer4a) {
             score = score + 10;
         }
-        if (rg5.getCheckedRadioButtonId() == answer5b) {
+        if (radioGroupQuestion5.getCheckedRadioButtonId() == answer5b) {
             score = score + 10;
         }
-        if (!(chk6a.isChecked() && chk6c.isChecked())) { //Question 6
-            if (chk6b.isChecked()) {
+        if (!(answerCheckbox6a.isChecked() && answerCheckbox6c.isChecked())) { //Question 6
+            if (answerCheckbox6b.isChecked()) {
                 score = score + 5;
             }
-            if (chk6d.isChecked()) {
+            if (answerCheckbox6d.isChecked()) {
                 score = score + 5;
             }
         }
-        if (rg7.getCheckedRadioButtonId() == answer7b) {
+        if (radioGroupQuestion7.getCheckedRadioButtonId() == answer7b) {
             score = score + 10;
         }
-        if (rg8.getCheckedRadioButtonId() == answer8a) {
+        if (radioGroupQuestion8.getCheckedRadioButtonId() == answer8a) {
             score = score + 10;
         }
-        if (rg9.getCheckedRadioButtonId() == answer9b) {
+        if (radioGroupQuestion9.getCheckedRadioButtonId() == answer9b) {
             score = score + 10;
         }
-        if (rg10.getCheckedRadioButtonId() == answer10d) {
+        if (radioGroupQuestion10.getCheckedRadioButtonId() == answer10d) {
             score = score + 10;
         }
-        int correctAnswer = score / 10;
-        String message1 = getString(R.string.Toast1a) + name + getString(R.string.Toast2a) + getString(R.string.Toast3a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a);
-        String message2 = getString(R.string.Toast8a) + name + getString(R.string.Toast9a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a);
-        String message3 = getString(R.string.Toast10a) + name + getString(R.string.Toast11a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswer + getString(R.string.Toast7a);
-        if (correctAnswer <= 5) {
-            displayToast(message1);
+        int correctAnswerSubmitted = score / 10;
+        String scoreMessage1 = getString(R.string.Toast1a) + userName + getString(R.string.Toast2a) + getString(R.string.Toast3a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswerSubmitted + getString(R.string.Toast7a);
+        String scoreMessage2 = getString(R.string.Toast8a) + userName + getString(R.string.Toast9a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswerSubmitted + getString(R.string.Toast7a);
+        String scoreMessage3 = getString(R.string.Toast10a) + userName + getString(R.string.Toast11a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswerSubmitted + getString(R.string.Toast7a);
+        if (correctAnswerSubmitted <= 5) {
+            displayToast(scoreMessage1);
         }
-        if (correctAnswer > 5 && correctAnswer <= 8) {
-            displayToast(message2);
+        if (correctAnswerSubmitted > 5 && correctAnswerSubmitted <= 8) {
+            displayToast(scoreMessage2);
         }
-        if (correctAnswer > 8) {
-            displayToast(message3);
+        if (correctAnswerSubmitted > 8) {
+            displayToast(scoreMessage3);
         }
     }
+
     private void allFilled(RadioGroup radioGroup) {
         if (radioGroup.getCheckedRadioButtonId() == -1) {
-            allFilled = false;
+            allQuestionsFilled = false;
         }
     }
 
@@ -223,13 +221,13 @@ public class MainActivity extends AppCompatActivity {
         EditText nameView = (EditText) findViewById(R.id.your_name_view);
         String name = nameView.getText().toString();
         if (name.equals("")) {
-            allFilled = false;
+            allQuestionsFilled = false;
         }
     }
 
     private void checkBoxesFilled() {
-        if (!chk6a.isChecked() && !chk6b.isChecked() && !chk6c.isChecked() && !chk6d.isChecked()) {
-            allFilled = false;
+        if (!answerCheckbox6a.isChecked() && !answerCheckbox6b.isChecked() && !answerCheckbox6c.isChecked() && !answerCheckbox6d.isChecked()) {
+            allQuestionsFilled = false;
         }
     }
 
