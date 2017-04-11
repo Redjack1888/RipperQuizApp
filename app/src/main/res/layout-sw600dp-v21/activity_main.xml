@@ -123,9 +123,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q1" />
 
                         <RadioButton
@@ -133,9 +132,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q1" />
 
                         <RadioButton
@@ -143,19 +141,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q1" />
 
                         <RadioButton
                             android:id="@+id/answer1d"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q1" />
                     </RadioGroup>
                 </LinearLayout>
@@ -192,20 +188,18 @@
                             android:id="@+id/answer2a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
                             android:id="@+id/answer2b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
                 </LinearLayout>
@@ -242,20 +236,18 @@
                             android:id="@+id/answer3a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
                             android:id="@+id/answer3b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
 
@@ -294,44 +286,36 @@
                             android:id="@+id/answer4a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q4" />
 
                         <RadioButton
                             android:id="@+id/answer4b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q4" />
 
                         <RadioButton
                             android:id="@+id/answer4c"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q4" />
 
                         <RadioButton
                             android:id="@+id/answer4d"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:textSize="@dimen/button_text_size"
                             android:buttonTint="@color/colorPrimary"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q4" />
                     </RadioGroup>
 
@@ -369,9 +353,8 @@
                             android:id="@+id/answer5a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:buttonTint="@color/colorPrimary"
                             android:text="@string/answer1Q5" />
 
@@ -379,30 +362,27 @@
                             android:id="@+id/answer5b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q5" />
 
                         <RadioButton
                             android:id="@+id/answer5c"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q5" />
 
                         <RadioButton
                             android:id="@+id/answer5d"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q5" />
                     </RadioGroup>
                 </LinearLayout>
@@ -428,7 +408,7 @@
                         android:text="@string/Question6"
                         />
 
-                    <LinearLayout
+                    <RadioGroup
                         android:id="@+id/checkboxes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -439,42 +419,38 @@
                             android:id="@+id/check6a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q6" />
 
                         <CheckBox
                             android:id="@+id/check6b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q6" />
 
                         <CheckBox
                             android:id="@+id/check6c"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q6" />
 
                         <CheckBox
                             android:id="@+id/check6d"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q6" />
-                    </LinearLayout>
+                    </RadioGroup>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -509,20 +485,18 @@
                             android:id="@+id/answer7a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
                             android:id="@+id/answer7b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
                 </LinearLayout>
@@ -559,20 +533,18 @@
                             android:id="@+id/answer8a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
                             android:id="@+id/answer8b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
                 </LinearLayout>
@@ -609,10 +581,9 @@
                             android:id="@+id/answer9a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q9" />
 
                         <RadioButton
@@ -620,8 +591,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:buttonTint="@color/colorPrimary"
                             android:text="@string/answer2Q9" />
 
@@ -630,8 +600,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:buttonTint="@color/colorPrimary"
                             android:text="@string/answer3Q9" />
 
@@ -640,8 +609,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:buttonTint="@color/colorPrimary"
                             android:text="@string/answer4Q9" />
                     </RadioGroup>
@@ -679,40 +647,37 @@
                             android:id="@+id/answer10a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q10" />
 
                         <RadioButton
                             android:id="@+id/answer10b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q10" />
 
                         <RadioButton
                             android:id="@+id/answer10c"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q10" />
 
                         <RadioButton
                             android:id="@+id/answer10d"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
+
                             android:buttonTint="@color/colorPrimary"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            android:layout_weight="1"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q10" />
                     </RadioGroup>
                 </LinearLayout>
@@ -743,6 +708,7 @@
                         android:onClick="reset"
                         android:textStyle="bold"
                         android:textSize="@dimen/button2_text_size"
+                        android:visibility="invisible"
                         android:text="@string/reset" />
 
                     <Button
@@ -756,6 +722,7 @@
                         android:onClick="submit"
                         android:textStyle="bold"
                         android:textSize="@dimen/button2_text_size"
+                        android:visibility="visible"
                         android:text="@string/submit_quiz" />
                 </LinearLayout>
 

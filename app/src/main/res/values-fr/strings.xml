@@ -34,4 +34,5 @@
     <string name="Toast11a">, Vous êtes un véritable Ripperologue!</string>
     <string name="Toast8a">Bon travail&#160;</string>
     <string name="Toast9a">, Mais vous pouvez faire mieux!</string>
+    <string name="alert_message">Remplissez toutes les questions avant de procéder à la soumission des quiz!</string>
 </resources>

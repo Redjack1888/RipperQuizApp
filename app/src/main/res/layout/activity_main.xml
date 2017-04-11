@@ -122,36 +122,32 @@
                             android:id="@+id/answer1a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q1" />
 
                         <RadioButton
                             android:id="@+id/answer1b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q1" />
 
                         <RadioButton
                             android:id="@+id/answer1c"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q1" />
 
                         <RadioButton
                             android:id="@+id/answer1d"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q1" />
                     </RadioGroup>
                 </LinearLayout>
@@ -188,18 +184,16 @@
                             android:id="@+id/answer2a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
                             android:id="@+id/answer2b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
                 </LinearLayout>
@@ -236,18 +230,16 @@
                             android:id="@+id/answer3a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
                             android:id="@+id/answer3b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
 
@@ -286,40 +278,32 @@
                             android:id="@+id/answer4a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q4" />
 
                         <RadioButton
                             android:id="@+id/answer4b"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q4" />
 
                         <RadioButton
                             android:id="@+id/answer4c"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q4" />
 
                         <RadioButton
                             android:id="@+id/answer4d"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="start"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q4" />
                     </RadioGroup>
 
@@ -357,9 +341,8 @@
                             android:id="@+id/answer5a"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/button_text_size"
                             android:layout_weight="1"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q5" />
 
                         <RadioButton
@@ -367,8 +350,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q5" />
 
                         <RadioButton
@@ -376,8 +358,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q5" />
 
                         <RadioButton
@@ -385,8 +366,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q5" />
                     </RadioGroup>
                 </LinearLayout>
@@ -417,6 +397,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
+                        android:background="@android:color/transparent"
                         android:layout_margin="@dimen/margin_or_padding">
 
                         <CheckBox
@@ -424,8 +405,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q6" />
 
                         <CheckBox
@@ -433,8 +413,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q6" />
 
                         <CheckBox
@@ -442,8 +421,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q6" />
 
                         <CheckBox
@@ -451,8 +429,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q6" />
                     </LinearLayout>
                 </LinearLayout>
@@ -490,8 +467,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
@@ -499,8 +475,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
                 </LinearLayout>
@@ -538,8 +513,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerTrue" />
 
                         <RadioButton
@@ -547,8 +521,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/AnswerFalse" />
                     </RadioGroup>
                 </LinearLayout>
@@ -586,8 +559,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q9" />
 
                         <RadioButton
@@ -595,8 +567,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q9" />
 
                         <RadioButton
@@ -604,8 +575,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q9" />
 
                         <RadioButton
@@ -613,8 +583,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q9" />
                     </RadioGroup>
                 </LinearLayout>
@@ -652,8 +621,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer1Q10" />
 
                         <RadioButton
@@ -661,8 +629,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer2Q10" />
 
                         <RadioButton
@@ -670,8 +637,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer3Q10" />
 
                         <RadioButton
@@ -679,8 +645,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:textSize="@dimen/button_text_size"
-                            android:padding="@dimen/margin_or_padding"
+                            style="@style/answerStyle"
                             android:text="@string/answer4Q10" />
                     </RadioGroup>
                 </LinearLayout>
@@ -709,6 +674,7 @@
                         android:layout_marginRight="@dimen/margin1"
                         android:layout_weight="1"
                         android:onClick="reset"
+                        android:visibility="invisible"
                         android:textStyle="bold"
                         android:textSize="@dimen/button2_text_size"
                         android:text="@string/reset" />
@@ -724,6 +690,7 @@
                         android:onClick="submit"
                         android:textStyle="bold"
                         android:textSize="@dimen/button2_text_size"
+                        android:visibility="visible"
                         android:text="@string/submit_quiz" />
                 </LinearLayout>
 
