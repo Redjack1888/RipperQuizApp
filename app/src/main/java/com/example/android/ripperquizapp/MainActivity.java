@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import static com.example.android.ripperquizapp.R.id.answer10d;
 import static com.example.android.ripperquizapp.R.id.answer1c;
 import static com.example.android.ripperquizapp.R.id.answer2a;
 import static com.example.android.ripperquizapp.R.id.answer3b;
@@ -35,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup radioGroupQuestion7;
     private RadioGroup radioGroupQuestion8;
     private RadioGroup radioGroupQuestion9;
-    private RadioGroup radioGroupQuestion10;
     private CheckBox answerCheckbox6a;
     private CheckBox answerCheckbox6b;
     private CheckBox answerCheckbox6c;
@@ -60,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
         radioGroupQuestion7 = (RadioGroup) findViewById(R.id.rg11View); //True False
         radioGroupQuestion8 = (RadioGroup) findViewById(R.id.rg12View); //True False
         radioGroupQuestion9 = (RadioGroup) findViewById(R.id.rg13View); //Multiple
-        radioGroupQuestion10 = (RadioGroup) findViewById(R.id.rg15View); //Multiple
 
         resetButton = (Button) findViewById(reset_button);
         resetButton.setVisibility(View.INVISIBLE); //To set invisible
@@ -85,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
+        // save the reset and submit buttons visibility state
         outState.putInt("submitSavedVisibility", submitButton.getVisibility());
         outState.putInt("resetSavedVisibility", resetButton.getVisibility());
 
@@ -93,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        // restore the reset and submit buttons visibility state
         if (savedInstanceState.getInt("submitSavedVisibility") == View.VISIBLE) {
             submitButton.setVisibility(View.VISIBLE);
         } else {
@@ -105,12 +104,16 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onRestoreInstanceState(savedInstanceState);
     }
-
+    /**
+     * This method is called when reset button is clicked.
+     * All input and answers are restored (Clear) to initial state
+     */
     public void reset(View v) {
 
         EditText userName = (EditText) findViewById(R.id.your_name_view);
-
         userName.setText(null);
+        EditText answer10View = (EditText) findViewById(R.id.answer10);
+        answer10View.setText(null);
 
         radioGroupQuestion1.clearCheck();
         radioGroupQuestion2.clearCheck();
@@ -120,7 +123,6 @@ public class MainActivity extends AppCompatActivity {
         radioGroupQuestion7.clearCheck();
         radioGroupQuestion8.clearCheck();
         radioGroupQuestion9.clearCheck();
-        radioGroupQuestion10.clearCheck();
 
         answerCheckbox6a.setChecked(false);
         answerCheckbox6b.setChecked(false);
@@ -130,10 +132,13 @@ public class MainActivity extends AppCompatActivity {
         submitButton.setVisibility(View.VISIBLE);
         resetButton.setVisibility(View.INVISIBLE);
     }
-
+    /**
+     * This method is called when submit button is clicked.
+     */
     public void submit(View view) {
         allQuestionsFilled = true;
 
+        // Verify if all RadioGroups, CheckBoxes and EditText fields are all correctly filled
         radioGroupFilled(radioGroupQuestion1);
         radioGroupFilled(radioGroupQuestion2);
         radioGroupFilled(radioGroupQuestion3);
@@ -142,25 +147,34 @@ public class MainActivity extends AppCompatActivity {
         radioGroupFilled(radioGroupQuestion7);
         radioGroupFilled(radioGroupQuestion8);
         radioGroupFilled(radioGroupQuestion9);
-        radioGroupFilled(radioGroupQuestion10);
         editTextFilled();
         checkBoxesFilled();
 
         if (allQuestionsFilled) {
+            // Change the Visibility of Reset and Submit buttons if all Answers fields are filled
             resetButton.setVisibility(View.VISIBLE); //To set visible
             submitButton.setVisibility(View.INVISIBLE);
+            // Call the method to evaluate the quiz
             evaluate();
         } else {
+            // Dispay a Toast Message to inform the user to complete to fill the quiz
             String alert_message = getString(R.string.alert_message);
             displayToast(alert_message);
         }
     }
-
+    /**
+     * This method evaluate the quiz according to User answers.
+     */
     private void evaluate() {
+        // EditTexts are instanced and their content grab and converted into String
         EditText nameView = (EditText) findViewById(R.id.your_name_view);
         String userName = nameView.getText().toString();
-        int score = 0;
+        EditText answer10View = (EditText) findViewById(R.id.answer10);
+        String answer10 = answer10View.getText().toString();
 
+        int score = 0; // Locale variable score
+
+        // Check user answers with correct answers and assign score points
         if (radioGroupQuestion1.getCheckedRadioButtonId() == answer1c) {
             score = score + 10;
         }
@@ -193,13 +207,18 @@ public class MainActivity extends AppCompatActivity {
         if (radioGroupQuestion9.getCheckedRadioButtonId() == answer9b) {
             score = score + 10;
         }
-        if (radioGroupQuestion10.getCheckedRadioButtonId() == answer10d) {
+        if (answer10.equals(getString(R.string.question10_correct_answer))) {
             score = score + 10;
         }
-        int correctAnswerSubmitted = score / 10;
+
+        int correctAnswerSubmitted = score / 10; // convert score points into number of correct answer submitted
+
+        // Create Score Messages according to user name and score and correct answer submitted.
         String scoreMessage1 = getString(R.string.Toast1a) + userName + getString(R.string.Toast2a) + getString(R.string.Toast3a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswerSubmitted + getString(R.string.Toast7a);
         String scoreMessage2 = getString(R.string.Toast8a) + userName + getString(R.string.Toast9a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswerSubmitted + getString(R.string.Toast7a);
         String scoreMessage3 = getString(R.string.Toast10a) + userName + getString(R.string.Toast11a) + getString(R.string.Toast4a) + score + getString(R.string.Toast5a) + getString(R.string.Toast6a) + correctAnswerSubmitted + getString(R.string.Toast7a);
+
+        // Displays Score Messages on the screen according to correct answer submitted.
         if (correctAnswerSubmitted <= 5) {
             displayToast(scoreMessage1);
         }
@@ -210,27 +229,37 @@ public class MainActivity extends AppCompatActivity {
             displayToast(scoreMessage3);
         }
     }
-
+    /**
+     * This method verify that all RadioGroup are filled before to evaluate the quiz
+     */
     private void radioGroupFilled(RadioGroup radioGroup) {
         if (radioGroup.getCheckedRadioButtonId() == -1) {
             allQuestionsFilled = false;
         }
     }
-
+    /**
+     * This method verify that all EditText (User Name and Answer to question 10) are filled before to evaluate the quiz.
+     */
     private void editTextFilled() {
         EditText nameView = (EditText) findViewById(R.id.your_name_view);
+        EditText answer10View = (EditText) findViewById(R.id.answer10);
         String name = nameView.getText().toString();
-        if (name.equals("")) {
+        String answer10 = answer10View.getText().toString();
+        if ((name.equals("")) || (answer10.equals(""))){
             allQuestionsFilled = false;
         }
     }
-
+    /**
+     * This method verify that checkboxes are filled before to evaluate the quiz.
+     */
     private void checkBoxesFilled() {
         if (!answerCheckbox6a.isChecked() && !answerCheckbox6b.isChecked() && !answerCheckbox6c.isChecked() && !answerCheckbox6d.isChecked()) {
             allQuestionsFilled = false;
         }
     }
-
+    /**
+     * This method displays messages on the screen .
+     */
     private void displayToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }

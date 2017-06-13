@@ -3,7 +3,7 @@
     <string name="AnswerFalse">Faux\n</string>
     <string name="AnswerTrue">Vrai\n</string>
     <string name="Question1">Lequel d\'entre eux n\'est PAS un suspect de Jack the Ripper?</string>
-    <string name="Question10">Qu\'est-ce que Elizabeth Stride emprunte à Charles Preston?</string>
+
     <string name="Question2">Barbara Windsor a-t-elle déjà joué le rôle d\'Annie Chapman?</string>
     <string name="Question3">La lettre à George Lusk portait-elle la signature froid Jack the Ripper?</string>
     <string name="Question4">Eliza Cooper avait prêté Annie Chapman?</string>
@@ -13,15 +13,12 @@
     <string name="Question8">Rose Mylett était une victime de Whitechapel Murders?</string>
     <string name="Question9">\"SURELY SLIME CANT HURT ROBERT\" est un anagramme dont deux sites de meurtre?</string>
     <string name="Toast1a">"Désolé&#160;"</string>
-    <string name="Toast7a">"&#160;questions sur 10 total!"</string>
+    <string name="Toast7a">"&#160;questions sur 11 total!"</string>
     <string name="answer1Q4">Une savonnette\n</string>
     <string name="answer1Q9">Buck\'s Row et Miller\'s Court</string>
-    <string name="answer2Q10">Une tranche de pain\n</string>
     <string name="answer2Q9">Miller\'s Court et Hanbury Street</string>
-    <string name="answer3Q10">Un manteau\n</string>
     <string name="answer3Q4">Une brosse à cheveux</string>
     <string name="answer3Q9">Hanbury Street et Berner Street</string>
-    <string name="answer4Q10">Une brosse à linge</string>
     <string name="answer4Q4">Une bouteille de gin</string>
     <string name="answer4Q9">Durward Street et Millers Court\n</string>
     <string name="name">Nom</string>
@@ -35,4 +32,6 @@
     <string name="Toast8a">Bon travail&#160;</string>
     <string name="Toast9a">, Mais vous pouvez faire mieux!</string>
     <string name="alert_message">Remplissez toutes les questions avant de procéder à la soumission des quiz!</string>
+    <string name="q10_hint">Insérer seulement le nom de famille du docteur</string>
+    <string name="question10">Cinq chirurgiens ont participé aux autopsies des victimes de Whitechapel. Les médecins Llewellyn, Phillips, Blackwell, Brown et Bond. Quel homme était impliqué dans la plupart des cas?</string>
 </resources>

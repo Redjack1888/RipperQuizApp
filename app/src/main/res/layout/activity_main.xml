@@ -606,48 +606,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/textViewStyle"
-                        android:text="@string/Question10"
+                        android:text="@string/question10"
                         />
 
-                    <RadioGroup
-                        android:id="@+id/rg15View"
+                    <EditText
+                        android:id="@+id/answer10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_margin="@dimen/margin_or_padding">
+                        android:hint="@string/q10_hint"
+                        android:textSize="@dimen/text_size"
+                        android:inputType="textCapWords"
+                        android:layout_margin="@dimen/margin_or_padding"
+                        android:padding="@dimen/margin_or_padding"/>
 
-                        <RadioButton
-                            android:id="@+id/answer10a"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            style="@style/answerStyle"
-                            android:text="@string/answer1Q10" />
-
-                        <RadioButton
-                            android:id="@+id/answer10b"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            style="@style/answerStyle"
-                            android:text="@string/answer2Q10" />
-
-                        <RadioButton
-                            android:id="@+id/answer10c"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            style="@style/answerStyle"
-                            android:text="@string/answer3Q10" />
-
-                        <RadioButton
-                            android:id="@+id/answer10d"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            style="@style/answerStyle"
-                            android:text="@string/answer4Q10" />
-                    </RadioGroup>
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 

@@ -18,8 +18,7 @@
 </string>
     <string name="Question9">\"SURELY SLIME CANT HURT ROBERT\" is an anagram of which two murder sites?
 </string>
-    <string name="Question10">What did Elizabeth Stride borrow from Charles Preston?
-</string>
+
     <string name="AnswerTrue">True</string>
     <string name="AnswerFalse">False</string>
     <string name="your_name_here">Please enter your name here</string>
@@ -44,10 +43,7 @@
     <string name="answer2Q9">Miller\'s Court and Hanbury Street</string>
     <string name="answer3Q9">Hanbury Street and Berner Street</string>
     <string name="answer4Q9">Durward Street and Millers Court</string>
-    <string name="answer1Q10" translatable="false">Sixpence</string>
-    <string name="answer2Q10">A loaf of bread</string>
-    <string name="answer3Q10">A coat</string>
-    <string name="answer4Q10">A clothes brush</string>
+
     <string name="reset" translatable="false">RESET</string>
     <string name="submit_quiz">SUBMIT</string>
     <string name="header_image_description" translatable="false">Jack the Ripper Qiz Header</string>
@@ -64,5 +60,8 @@
     <string name="Toast11a">, you are a real Ripperologist!</string>
 
     <string name="alert_message">Please fill all questions before to proceed with quiz submission!</string>
+    <string name="question10">Five surgeons were involved in the autopsies of the Whitechapel victims. Doctors Llewellyn, Phillips, Blackwell, Brown, and Bond. Which man was involved in the most cases?</string>
+    <string name="q10_hint">Insert only Last Name of the Doctor</string>
+    <string name="question10_correct_answer" translatable="false">Bond</string>
 
 </resources>
