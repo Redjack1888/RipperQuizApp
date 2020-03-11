@@ -16,3 +16,20 @@ This project is about combining various ideas and skills we’ve been practicing
 * Creating, positioning, and styling views.
 * Creating interactivity through button clicks and Java code.
 * Commenting and documenting your code.
+
+## Screenshots
+<table style="margin-left: auto; margin-right: auto;" border="0">
+<tbody>
+<tr>
+<td><img src="https://github.com/Redjack1888/RipperQuizApp/blob/master/assets/Screenshot_1583963372.png" width="250" height="444" /></td>
+<td><img src="https://github.com/Redjack1888/RipperQuizApp/blob/master/assets/Screenshot_1583966827.png" width="250" height="444" /></td>
+<td><img src="https://github.com/Redjack1888/RipperQuizApp/blob/master/assets/Screenshot_1583966856.png" width="250" height="444" /></td>
+</tr>
+<tr>
+<td><img src="https://github.com/Redjack1888/RipperQuizApp/blob/master/assets/Screenshot_1583966882.png" width="250" height="444" /></td>
+<td><img src="https://github.com/Redjack1888/RipperQuizApp/blob/master/assets/Screenshot_1583966892.png" width="250" height="444" /></td>
+<td><img src="https://github.com/Redjack1888/RipperQuizApp/blob/master/assets/Screenshot_1583967034.png" width="250" height="444" /></td>
+</tr>
+</tbody>
+</table>
+
