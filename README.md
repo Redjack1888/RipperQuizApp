@@ -1,4 +1,6 @@
 # RipperQuizApp
+![Cover](/assets/smartmockups_k7nx5hc5.jpg)
+
 Quiz App (Project 3) for "Android Development for Beginners" - (EU Scholarship) by Udacity
 
 ## Project Overview
